@@ -1,6 +1,6 @@
 # Generate docs with pdoc ...
-pdoc -d numpy -o docs/api cast
+pdoc -d numpy -o docs/api tggen
 
 # and some diagrams to be linked as well.
 # Needs Graphviz to work properly
-pyreverse -o png -p cast -d docs cast
+pyreverse -o png -p tggen -d docs tggen

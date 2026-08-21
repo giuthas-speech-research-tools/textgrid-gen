@@ -26,43 +26,18 @@ and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
 ### Added
 
-- CAST will soon be available on pypi.
-
-As mentioned in the README these are planned features:
-- `add` which add Tiers to TextGrids up to the specified level (see below).
-  `add` will also generate the TextGrids if they do not already exist.
-  - The Tier levels will be L0=[File], L1=[Utterance], L2=Word, L3=Phonemes,
-    L4=Phones. Levels whose names are in brackets can be turned off as a
-    configuration option. All preceding levels (that haven't been turned off) above
-    the requested level will be added to the TextGrid. The File level is turned off
-    by default when not running `concatenate`. All levels maybe renamed as a
-    configuration option.
-- `concatenate` produces a concatenated wav file and corresponding TextGrid
-  for working on multiple recordings in Praat.
-- `extract` extracts TextGrids corresponding to individual recordings from a
-  previously concatenated set of recordings.
-- `remove-double-word-boundaries` cleans up extra word boundaries from
-  TextGrids -- i.e. empty space between words.
-- Configuration file for project specific settings like Tier names, if an
-  utterance level should be included, and a bunch of other things.
-
-In addition:
-- Support for beep detection (go-signal in delayed naming experiments), and
-  automatically adding the relevant intervals in the TextGrids.
-
-### Changed 
-
-- `add` currently writes the TextGrids in the original data directory. This
-  maybe changed in the future or become optional, but is pending on PATKIT being
-  able to properly edit TextGrids because Praat doesn't have a very easy time with
-  TextGrids and wavs living in separate directories.
+- `tggen` will be available from version 0.3.0 or soon after on pypi.
+- 0.4.0 will add two commands as detailed below.
+- 1.0 will do some code clean up
+- 1.x will potentially add new commands and new configuration options. Send me
+  an email or open on issue to request some?
 
 
-## [0.3.0] 2026-08-
+## [0.4.0] 2026-??-?? Unreleased
 
 ### Highlights
 
-- New commands `init` and `add` now work.
+- This version will add commands `init` and `add`.
 
 ### Added
 
@@ -76,8 +51,21 @@ In addition:
 - A number of other commands are present in the command line interface too, but
   have not been implemented yet.
 
+
+## [0.3.0] 2026-08-
+
+### Highlights
+
+- test-pypi and pypi uploads
+- New installation procedure with `uv`.
+
+### Added
+
+- Some new documentation.
+
 ### Removed
 
+- Removed all conda and mamba related files.
 - File tier level is now by default off even if it is not explicitly set in the
   configuration.
 - Similarly, Utterance, Word, Phoneme, and Phone are by default on.

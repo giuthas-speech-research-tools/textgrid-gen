@@ -47,7 +47,7 @@
 # person:
 # do not.
 
-# This tells CAST which metadata importer to use.
+# This tells tggen which metadata importer to use.
 data source: RASL
 
 # This is where we read the wavs and metadata from.
