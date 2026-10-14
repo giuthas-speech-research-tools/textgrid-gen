@@ -29,14 +29,14 @@
 # citations.bib in BibTeX format.
 #
 """
-Main API of CAST - Computer Assisted Segmentation Tools
+Main API of `textgrid-gen`.
 """
 
 from .audio_processing import high_pass, high_pass_50, detect_beep_and_speech
 from .clean_textgrids import remove_empty_intervals_from_textgrids
 from .cli import run_cli
 from .concatenate import concatenate_wavs
-from .configuration import CastConfig
+from .configuration import TggenConfig
 from .csv_output import write_results
 from .extract import extract_textgrids
 from .meta import (

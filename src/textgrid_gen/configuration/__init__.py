@@ -32,7 +32,7 @@
 Configuration for CAST.
 """
 
-from .configuration import CastConfig
+from .configuration import TggenConfig
 from .configuration_classes import (
     ConfigurationFlags, ExclusionList, MainConfig, UtteranceGuess
 )

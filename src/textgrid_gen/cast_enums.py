@@ -1,7 +1,7 @@
 #
 # Copyright (c) 2022-2024 Pertti Palo.
 #
-# This file is part of Computer Assisted Segmentation Tools 
+# This file is part of Computer Assisted Segmentation Tools
 # (see https://github.com/giuthas-speech-research-tools/cast/).
 #
 # This program is free software: you can redistribute it and/or modify
@@ -29,7 +29,7 @@
 # citations.bib in BibTeX format.
 #
 """
-Define and process CAST command line commands.
+Define and process `textgrid-gen` command line commands.
 """
 from enum import Enum
 from pathlib import Path

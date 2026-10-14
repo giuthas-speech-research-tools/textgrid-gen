@@ -39,9 +39,9 @@ from .configuration_classes import ExclusionList, MainConfig
 _logger = logging.getLogger('cast.configuration_setup')
 
 
-class CastConfig:
+class TggenConfig:
     """
-    Main configuration class of SATKIT.
+    Main configuration class of `textgrid-gen`.
     """
 
     # TODO

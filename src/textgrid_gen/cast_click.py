@@ -38,8 +38,8 @@ from pathlib import Path
 import click
 from icecream import ic
 
-from .configuration import CastConfig
-from .clean_textgrids import (
+from textgrid_gen.configuration import TggenConfig
+from textgrid_gen.clean_textgrids import (
     align_beeps_in_textgrid, remove_empty_intervals_from_textgrids,
     split_tier_in_two
 )
@@ -63,7 +63,7 @@ def add(directory: str, config_file: str) -> None:
     DIRECTORY contains the TextGrids to process.
     CONFIG_FILE is the configuration .yaml file.
     """
-    configuration = CastConfig(Path(config_file))
+    configuration = TggenConfig(Path(config_file))
     pronunciation_dict = None
     add_tiers(path=directory,
               configuration=configuration.main_config,

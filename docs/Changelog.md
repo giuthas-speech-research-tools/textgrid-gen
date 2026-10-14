@@ -56,6 +56,7 @@ and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 
 ### Highlights
 
+- This package is now called `textgrid-gen` or `tggen` for short.
 - test-pypi and pypi uploads
 - New installation procedure with `uv`.
 

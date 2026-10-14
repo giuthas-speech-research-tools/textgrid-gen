@@ -1,7 +1,7 @@
 #
 # Copyright (c) 2022-2024 Pertti Palo.
 #
-# This file is part of Computer Assisted Segmentation Tools 
+# This file is part of Computer Assisted Segmentation Tools
 # (see https://github.com/giuthas-speech-research-tools/cast/).
 #
 # This program is free software: you can redistribute it and/or modify
@@ -32,7 +32,7 @@
 
 import click
 
-from cast import cast_click
+from textgrid_gen import cast_click
 # from .command_line import CastArgumentParser
 # from .commands import CommandStrings, process_command
 # from .configuration import CastConfig
